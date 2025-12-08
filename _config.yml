@@ -1,10 +1,10 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "My blog"
+title: "nucofu"
+author: "Rustu Judika Rahmat"
+description: "ini adalah blog personal saya, biasanya diisi dengan postingan tutorial seputar linux atau postingan analisis data"
 permalink: /:title/
-lang: "en"
+lang: "id"
 excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
+date_format: "%d %B, %Y"
 
 # Layout
 
@@ -22,9 +22,12 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md", sidebaricon: address-card}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
-  - {title: Mail, icon: envelope, url: "mailto:author@example.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
+
+footer:
+  - {title: Instagram, icon: instagram, url: "https://instagram.com/nullcolorfull/"}
+  - {title: Mail, icon: envelope, url: "mailto:rusjud1ka@gmail.com"}
+  - {title: Github, icon: github, url: "https://github.com/nucofu/"}
 
 comments:
 #  disqus_shortname: ""         # see https://disqus.com
