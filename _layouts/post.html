@@ -13,7 +13,7 @@ layout: default
   {% endif %}
 </article>
 
-{% unless site.show_minimal or site.footer  %}
+{% unless site.show_minimal %}
 {% if page.next.url or page.previous.url %}
 <div class="nowrap {% if site.show_frame %}dark{% else %}smooth{% endif %}">
   {% if page.next.url %}<a href="{{ page.next.url | relative_url }}">« {{ page.next.title }}</a> {% endif %}
