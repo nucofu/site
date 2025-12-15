@@ -12,13 +12,13 @@ a
   transition: .25s
   box-shadow: 0 2px transparent
   text-decoration-color: transparent
-  header &, footer &, nav &
+  header &, footer &, nav &, #upper_footer &
     font-weight: bold
-  header &, footer &, nav &:not(:hover)
+  header &, footer &, nav &:not(:hover), #upper_footer &
     color: inherit
   article &:hover
     text-decoration-color: inherit
-  body > header &:hover, body > footer &:hover
+  body > header &:hover, body > footer &:hover, body > #upper_footer &:hover
     box-shadow: 0 2px
 
 hr
