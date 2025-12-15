@@ -1,6 +1,6 @@
 title: "nucofu"
 author: "Rustu Judika Rahmat"
-description: "ini adalah blog personal saya, biasanya diisi dengan postingan tutorial seputar linux atau postingan analisis data"
+description: "catatan ringan tentang linux dan analisis data, kadang serius kadang cuma sekedar dokumentasi"
 permalink: /:title/
 lang: "id"
 excerpt_separator: "\n\n\n"
