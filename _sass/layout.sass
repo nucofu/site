@@ -6,10 +6,17 @@ body
   box-sizing: border-box
   -webkit-text-size-adjust: 100%
 
-body > header, body > footer
+body > header, body > #upper_footer
   display: flex
   flex-wrap: wrap
   justify-content: space-between
+  align-items: center
+
+body > footer
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  justify-content: center
   align-items: center
 
 header a, footer a
