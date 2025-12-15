@@ -15,7 +15,7 @@ layout: default
 
 {% unless site.show_minimal %}
 {% if page.next.url or page.previous.url %}
-<div class="hover nowrap {% if site.show_frame %}dark{% else %}smooth{% endif %}">
+<div id="upper_footer" class="nowrap {% if site.show_frame %}dark{% else %}smooth{% endif %}">
   {% if page.next.url %}<a href="{{ page.next.url | relative_url }}">« {{ page.next.title }}</a> {% endif %}
   {% if page.previous.url %} <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }} »</a>{% endif %}
 </div>
