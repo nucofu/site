@@ -45,3 +45,27 @@
     border: none
     margin: 0 1.5em 0 0
     padding: 0
+
+$Tease: .5s ease;
+
+#bTT
+  position: fixed
+  right: 33px
+  padding: 18px
+  font-size: 18px
+  border: none
+  border-radius: 33%
+  cursor: pointer
+  background: light(100, 15)
+  color: #fff
+  transition: bottom $Tease, opacity $Tease
+
+  &.isHidden
+    bottom: -150px
+    opacity: 0
+    pointer-events: none
+
+  &.isShow
+    bottom: 33px
+    opacity: 1
+    pointer-events: auto
