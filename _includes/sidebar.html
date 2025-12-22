@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="{{ "/assets/css/sidebar.css" | relative_url }}" media="screen and (min-width: 58em)">
 <aside style="display: none">
+  <h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
   <nav>
   {% assign keys = 'navigation,external,footer' | split: ',' %}
   {% for key in keys %}

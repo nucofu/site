@@ -18,6 +18,7 @@ body > footer
   flex-wrap: wrap
   justify-content: center
   align-items: center
+  text-align: center
 
 header a, footer a
   display: inline-block
@@ -47,3 +48,49 @@ header h1
 
 article, main
   flex-grow: 1
+
+$Tease: .5s ease;
+
+#bTT
+  position: fixed
+  right: 33px
+  padding: 1.5rem 2rem
+  font-size: 18px
+  border: none
+  border-radius: 33%
+  cursor: pointer
+  background: light(100, 15)
+  color: #fff
+  transition: bottom $Tease, opacity $Tease
+
+  &.isHidden
+    bottom: -150px
+    opacity: 0
+    pointer-events: none
+
+  &.isShow
+    bottom: 33px
+    opacity: 1
+    pointer-events: auto
+
+#paginate-middle
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  text-underline-offset: 0.4rem
+  text-decoration-color: white
+
+  & p.current
+    color: #f9f
+    padding: .4em .8em
+
+  & a
+    padding: .4em .8em
+      
+  & a:hover
+    background: none
+    color: white
+    font-weight: bold
+    text-decoration: underline
+    text-decoration-color: white
