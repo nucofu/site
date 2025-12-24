@@ -49,19 +49,16 @@ header h1
 article, main
   flex-grow: 1
 
-$Tease: .5s ease;
-
 #bTT
   position: fixed
   right: 33px
   padding: 1.5rem 2rem
   font-size: 18px
-  border: none
   border-radius: 33%
   cursor: pointer
-  background: light(100, 15)
-  color: #fff
-  transition: bottom $Tease, opacity $Tease
+  background: light(100, 13)
+  color: light-dark(#000, #fff)
+  transition: bottom .6s ease, opacity .6s ease
 
   &.isHidden
     bottom: -150px
@@ -73,24 +70,37 @@ $Tease: .5s ease;
     opacity: 1
     pointer-events: auto
 
-#paginate-middle
+#p-footer
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  text-align: center
+  text-underline-offset: 0.4rem
+  text-decoration-color: #f9f
+
+  & a
+    color: light-dark(#000, #fff)
+
+  & a:hover
+    background: none
+    font-weight: bold
+    text-decoration: underline
+    text-decoration-color: light-dark(#46f, #38f)
+
+.p-up
   display: flex
   flex-direction: row
   justify-content: center
   align-items: center
-  text-underline-offset: 0.4rem
-  text-decoration-color: white
-
-  & p.current
-    color: #f9f
-    padding: .4em .8em
-
+  text-align: center
   & a
     padding: .4em .8em
-      
-  & a:hover
-    background: none
-    color: white
-    font-weight: bold
-    text-decoration: underline
-    text-decoration-color: white
+  & p.current
+    color: light-dark(#46f, #38f)
+    padding: .4em .8em
+
+.p-down
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center

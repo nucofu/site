@@ -1,9 +1,20 @@
 ---
-title: "Home"
+title: "Posts"
 layout: default
+pagination:
+  enabled: true
 ---
-
-<article>
-  <header><h1>Yo..</h1></header>
-  <p>Angelo</p>
-</article>
+<h1>Latest Posts</h1>
+{% if site.show_excerpts %}
+  {% for post in paginator.posts %}
+    <article>
+      {% include meta.html post=post %}
+      {{ post.excerpt }}
+      <footer class="button"><a href="{{ post.url | relative_url }}">read more</a></footer>
+    </article>
+  {% endfor %}
+  {% include pagination.html %}
+{% else %}
+  {% capture source %}{% include_relative archive.html title="Posts" %}{% endcapture %}
+  {{ source | split: "---" | last }}
+{% endif %}

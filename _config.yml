@@ -18,8 +18,9 @@ show_minimal: false             # remove all clutter
 # Menu                          # for available icons see https://fontawesome.com/v5/icons/
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
-  - {url: "/posts", title: "Posts", sidebaricon: mail-bulk}
+  - {file: "about.html", sidebaricon: user}
   - {file: "shelf.html", sidebaricon: bookmark}
+
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
@@ -37,9 +38,9 @@ pagination:
   enabled: true
   offset: 0 # starting point of page
   permalink: '/:num/'
-  title: ':title - page :num of :max'
+  title: ':title - :num of :max'
   limit: 0 # limit of pages, 0 mean all pages
-  per_page: 1
+  per_page: 7
   sort_field: 'date'
   sort_reverse: true
 
