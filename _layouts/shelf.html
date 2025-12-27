@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<main id="shelf">
+<h1>Category</h1>
+  
+{% assign categories = site.categories | sort %}
+
+{% for category in categories %}
+  {% assign cat_name = category[0] %}
+  {% assign cat_posts = category[1] %}
+
+  <h2>{{ cat_name }}</h2>
+
+  {% assign posts_by_month = cat_posts
+    | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
+
+  {% for month in posts_by_month %}
+    <h3>{{ month.name }}</h3>
+
+    <nav class="smooth">
+      {% for post in month.items %}
+      <div id="c_post">
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%Y-%m-%d" }}
+        </time>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+      </div>
+      {% endfor %}
+    </nav>
+  {% endfor %}
+{% endfor %}
+
+  <h1>Archive</h1>
+  <nav class="smooth">
+    {% for post in site.posts %}
+    <div>
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%Y-%m-%d" }}
+      </time>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+    </div>
+    {% endfor %}
+  </nav>
+
+</main>

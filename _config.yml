@@ -1,6 +1,6 @@
 title: "nucofu"
-author: "Rustu Judika Rahmat"
-description: "Catatan kecil eksperimen saya di linux dan analisis data aktivitas yang terjadi di internet. Kadang serius, kadang cuma sekedar dokumentasi."
+author: "Rustu"
+description: "Sebuah catatan kecil."
 permalink: /:title/
 lang: "id"
 excerpt_separator: "\n\n\n"
@@ -19,7 +19,7 @@ show_minimal: false             # remove all clutter
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {file: "about.html", sidebaricon: user}
-  - {file: "shelf.html", sidebaricon: bookmark}
+  - {title: "Shelf", url: "/shelf/", sidebaricon: bookmark}
 
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
@@ -44,6 +44,13 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
+jekyll-archives:
+  enabled:
+    - month
+    - categories
+  layout: shelf
+
 plugins:
  - jekyll-feed
  - jekyll-paginate-v2
+ - jekyll-archives
