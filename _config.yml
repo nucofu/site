@@ -61,7 +61,7 @@ toc:
 jekyll-analytics:
   GoogleAnalytics:
     id: G-J7GZT30VEM
-    anonymizeIp: true
+    anonymizeIp: false
   
   
 plugins:
