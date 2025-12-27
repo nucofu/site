@@ -50,7 +50,16 @@ jekyll-archives:
     - categories
   layout: shelf
 
+toc:
+  min_level: 1
+  max_level: 6
+  ordered_list: true
+  no_toc_section_class: no_toc_section
+  list_class: section-nav
+  sublist_class: subsection-nav
+  
 plugins:
  - jekyll-feed
  - jekyll-paginate-v2
  - jekyll-archives
+ - jekyll-toc
