@@ -57,9 +57,16 @@ toc:
   no_toc_section_class: no_toc_section
   list_class: section-nav
   sublist_class: subsection-nav
+
+jekyll-analytics:
+  GoogleAnalytics:
+    id: G-J7GZT30VEM
+    anonymizeIp: true
+  
   
 plugins:
  - jekyll-feed
  - jekyll-paginate-v2
  - jekyll-archives
  - jekyll-toc
+ - jekyll-analytics
