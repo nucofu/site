@@ -3,6 +3,11 @@
 
 {% include head.html %}
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJVHQHTJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <header class="hover smooth">
   {% unless site.show_minimal and site.navigation and site.external %}
     <h1 {% if site.navigation and site.external %}class="full"{% endif %}><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
