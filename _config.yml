@@ -1,6 +1,7 @@
 title: "nucofu"
 author: "Rustu"
 description: "Sebuah catatan kecil."
+url: "https://nucofu.github.io"
 permalink: /:title/
 lang: "id"
 excerpt_separator: "\n\n\n"
