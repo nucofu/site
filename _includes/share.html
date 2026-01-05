@@ -1,0 +1,44 @@
+<hr><p class="share-p">Share On:<span>
+    <a class="share-btn facebook"
+      href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"
+       target="_blank"
+       rel="noopener noreferrer">
+      Facebook
+    </a>
+    <a class="share-btn x-twitter"
+      href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}"
+       target="_blank"
+       rel="noopener noreferrer">
+      X
+    </a>
+    <a class="share-btn linkedin"
+       href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url }}"
+       target="_blank"
+       rel="noopener noreferrer">
+      LinkedIn
+    </a>
+    <a class="share-btn reddit"
+       href="https://www.reddit.com/submit?url={{ page.url | absolute_url }}&title={% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}"
+       target="_blank"
+       rel="noopener noreferrer">
+      Reddit
+    </a>
+    <a class="share-btn telegram"
+       href="https://t.me/share/url?url={{ page.url | absolute_url }}&text={% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}"
+       target="_blank"
+       rel="noopener noreferrer">
+      Telegram
+    </a>
+    <a class="share-btn whatsapp"
+       href="https://api.whatsapp.com/send?text={% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}%20{{ page.url | absolute_url }}"
+       target="_blank"
+       rel="noopener noreferrer">
+      WhatsApp
+    </a>
+    <a class="share-btn email"
+       href="mailto:?subject={% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}&body=Check%20out%20this%20link:%20{{ page.url | absolute_url }}"
+       target="_blank"
+       rel="noopener noreferrer">
+      Email
+    </a>
+</span></p>

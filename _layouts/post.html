@@ -5,6 +5,7 @@ layout: default
 <article>
   {% include meta.html post=page %}
   {{ content | toc }}
+  {% include share.html %}
   {% if site.comments.isso_domain or site.comments.disqus_shortname %}
     <hr>
     {% if site.comments.isso_domain %}<div id="isso-thread"></div>{% endif %}

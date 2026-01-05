@@ -49,6 +49,8 @@ header h1
 article, main
   flex-grow: 1
 
+/* Back to Top button Section */
+
 #bTT
   position: fixed
   right: 33px
@@ -69,6 +71,8 @@ article, main
     bottom: 33px
     opacity: 1
     pointer-events: auto
+
+/* Pagination Section */
 
 #p-footer
   display: flex
@@ -105,6 +109,8 @@ article, main
   justify-content: space-between
   align-items: center
 
+/* Shelf Page Section */
+
 #shelf
   & h2
     padding-left: 1.5rem
@@ -112,3 +118,54 @@ article, main
     padding-left: 3rem
   & div#c_post
     padding-left: 3rem
+
+/* Share Button Section */
+
+.share-p
+  text-align: left
+  line-height: 2rem
+
+.share-buttons
+  display: flex
+  flex-wrap: wrap
+  gap: .5rem
+
+.share-btn
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  padding: .5em .9em
+  font-size: .875rem
+  font-weight: 600
+  color: #fff
+  text-decoration: none
+  border-radius: .4rem
+  line-height: 1
+  transition: filter .2s ease, transform .1s ease
+
+  &:hover
+    filter: brightness(1.1)
+
+  &:active
+    transform: translateY(1px)
+
+.facebook
+  background: #1877f2
+
+.x-twitter
+  background: #000
+
+.linkedin
+  background: #0a66c2
+
+.reddit
+  background: #ff4500
+
+.telegram
+  background: #229ed9
+
+.whatsapp
+  background: #25d366
+
+.email
+  background: #6c757d
